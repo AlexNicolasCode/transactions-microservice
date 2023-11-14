@@ -1,6 +1,6 @@
 from typing import TypeVar, Generic
 
-T = TypeVar("T", object)
+T = TypeVar("T")
 
 class HttpResponse(Generic[T]):
     status_code: int
