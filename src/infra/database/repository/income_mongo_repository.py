@@ -1,9 +1,9 @@
 from typing import List
 
-from domain.model.income import Income
-from data.protocol.database.save_income_repository import SaveIncomeRepository
-from data.protocol.database.load_incomes_repository import LoadIncomesRepository
-from infra.database.entity.income_entity import IncomeEntity
+from src.domain.model.income import Income
+from src.data.protocol.database.save_income_repository import SaveIncomeRepository
+from src.data.protocol.database.load_incomes_repository import LoadIncomesRepository
+from src.infra.database.entity.income_entity import IncomeEntity
 
 class IncomeMongoRepository(SaveIncomeRepository, LoadIncomesRepository):
     async def save_income(self, income: Income) -> bool:

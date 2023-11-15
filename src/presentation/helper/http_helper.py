@@ -1,6 +1,6 @@
 from typing import TypeVar
 
-from presentation.protocol.http import HttpResponse
+from src.presentation.protocol.http import HttpResponse
 
 T = TypeVar("T")
 

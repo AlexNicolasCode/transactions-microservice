@@ -1,8 +1,8 @@
 from typing import List
 
-from domain.model.income import Income
-from domain.usecase.load_incomes import LoadIncomes
-from data.protocol.database.load_incomes_repository import LoadIncomesRepository
+from src.domain.model.income import Income
+from src.domain.usecase.load_incomes import LoadIncomes
+from src.data.protocol.database.load_incomes_repository import LoadIncomesRepository
 
 class DbLoadIncomes(LoadIncomes):
     def __init__(self, load_incomes_repository: LoadIncomesRepository) -> None:

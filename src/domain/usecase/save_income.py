@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
-from domain.model.income import Income
+from src.domain.model.income import Income
 
 class SaveIncome(metaclass=ABCMeta):
     @abstractmethod

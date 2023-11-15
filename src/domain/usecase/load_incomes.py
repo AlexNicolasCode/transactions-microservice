@@ -1,7 +1,7 @@
 from typing import List
 from abc import ABCMeta, abstractmethod
 
-from domain.model.income import Income
+from src.domain.model.income import Income
 
 class LoadIncomes(metaclass=ABCMeta):
     @abstractmethod

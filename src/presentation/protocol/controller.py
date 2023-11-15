@@ -1,8 +1,8 @@
 from abc import ABCMeta, abstractmethod
 from typing import TypeVar
 
-from presentation.protocol.http import HttpResponse
-from presentation.protocol.http import HttpRequest
+from src.presentation.protocol.http import HttpResponse
+from src.presentation.protocol.http import HttpRequest
 
 R = TypeVar("R")
 

@@ -3,8 +3,8 @@ from typing import TypeVar
 import jwt
 from fastapi import Response
 
-from presentation.protocol.http import HttpRequest
-from presentation.protocol.controller import Controller
+from src.presentation.protocol.http import HttpRequest
+from src.presentation.protocol.controller import Controller
 
 T = TypeVar("T")
 

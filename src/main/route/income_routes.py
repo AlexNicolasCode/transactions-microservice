@@ -2,10 +2,10 @@ import jwt
 from fastapi import APIRouter, Depends
 from fastapi.security import OAuth2PasswordBearer
 
-from domain.dto.save_income_dto import SaveIncomeDTO
-from main.factory.controller.save_income_controller_factory import makeSaveIncomeController
-from main.factory.controller.load_incomes_controller_factory import makeLoadIncomesController
-from main.adapter.route_adapter import route_adapter
+from src.domain.dto.save_income_dto import SaveIncomeDTO
+from src.main.factory.controller.save_income_controller_factory import makeSaveIncomeController
+from src.main.factory.controller.load_incomes_controller_factory import makeLoadIncomesController
+from src.main.adapter.route_adapter import route_adapter
 
 income_router = APIRouter(
     prefix="/income"

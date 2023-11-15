@@ -3,8 +3,8 @@ from contextlib import asynccontextmanager
 from motor.motor_asyncio import AsyncIOMotorClient
 from beanie import init_beanie
 
-from infra.database.entity.income_entity import IncomeEntity
-from main.route.income_routes import income_router
+from src.infra.database.entity.income_entity import IncomeEntity
+from src.main.route.income_routes import income_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
