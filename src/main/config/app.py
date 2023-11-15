@@ -8,7 +8,7 @@ from src.main.route.income_routes import income_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    client = AsyncIOMotorClient("mongodb://test:test@localhost:27017")
+    client = AsyncIOMotorClient("mongodb://test:test@host.docker.internal:27017")
     await init_beanie(database=client.db_name, document_models=[IncomeEntity])
     yield
 
