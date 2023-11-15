@@ -1,0 +1,6 @@
+__pycache__
+/api
+docker-compose.yml
+Dockerfile
+Makefile
+.gitignore
