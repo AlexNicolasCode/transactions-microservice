@@ -4,7 +4,7 @@ from domain.model.income import Income
 from domain.usecase.save_income import SaveIncome
 from data.protocol.database.load_incomes_repository import LoadIncomesRepository
 
-class DbSaveIncome(SaveIncome):
+class DbLoadIncomes(SaveIncome):
     def __init__(self, load_incomes_repository: LoadIncomesRepository) -> None:
         self.repository = load_incomes_repository
 
