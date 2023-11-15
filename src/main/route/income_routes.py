@@ -1,5 +1,5 @@
 import jwt
-from fastapi import APIRouter, Response, Depends
+from fastapi import APIRouter, Depends
 from fastapi.security import OAuth2PasswordBearer
 
 from domain.dto.save_income_dto import SaveIncomeDTO
