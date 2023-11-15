@@ -13,5 +13,5 @@ class LoadIncomesController(Controller):
         self.load_incomes = load_incomes_external
 
     async def handle(self, request: HttpRequest[LoadIncomesDTO]) -> HttpResponse[List[Income]]:
-        incomes = await self.load_incomes.load_incomes(request.body)
-        return ok[List[Income]](incomes)
+        incomes = await self.load_incomes.load_incomes(request.body["user_id"])
+        return ok(incomes)
