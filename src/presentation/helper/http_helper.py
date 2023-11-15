@@ -1,4 +1,14 @@
+from typing import Generic, TypeVar
+
 from presentation.protocol.http import HttpResponse
+
+T = TypeVar("T")
+
+def ok () -> HttpResponse[Generic[T]]:
+    return {
+        "status_code": 200,
+        "body": None
+    }
 
 def created () -> HttpResponse[None]:
     return {
