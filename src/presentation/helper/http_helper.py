@@ -4,10 +4,10 @@ from presentation.protocol.http import HttpResponse
 
 T = TypeVar("T")
 
-def ok () -> HttpResponse[T]:
+def ok (body: T) -> HttpResponse[T]:
     return {
         "status_code": 200,
-        "body": None
+        "body": body
     }
 
 def created () -> HttpResponse[None]:
