@@ -1,2 +1,2 @@
 dev:
-	cd ./src && uvicorn app:app --reload && cd ..
+	cd ./src && uvicorn main.config.app:app --reload && cd ..
