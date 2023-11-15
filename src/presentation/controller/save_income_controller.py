@@ -4,7 +4,7 @@ from presentation.helper.http_helper import created, serverError
 from domain.usecase.save_income import SaveIncome
 from domain.dto.save_income_dto import SaveIncomeDTO
 
-class SaveIncomeController(Controller[str]):
+class SaveIncomeController(Controller):
 
     def __init__(self, save_income_external: SaveIncome):
         self.save_income = save_income_external
