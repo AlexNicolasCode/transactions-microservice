@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-from typing import TypeVar, Generic
+from typing import TypeVar
 
 from presentation.protocol.http import HttpResponse
 from presentation.protocol.http import HttpRequest
